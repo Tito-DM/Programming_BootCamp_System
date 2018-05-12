@@ -20,5 +20,7 @@ class Course
   end
 
   attr_accessor :name, :startDate, :endDate, :category
+
+
 end
 

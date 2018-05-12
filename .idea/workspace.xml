@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d963b34-5360-498e-9f7a-7a221bd99a5e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/course_list.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course.rb" beforeDir="false" afterPath="$PROJECT_DIR$/course.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lecture.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lecture.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rubyclasses.rb" beforeDir="false" afterPath="$PROJECT_DIR$/rubyclasses.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student_list.rb" beforeDir="false" afterPath="$PROJECT_DIR$/student_list.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,24 +16,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Programming_BootCamp_System@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1526108354049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="Programming_BootCamp_System" />
+    <SUITE FILE_PATH="coverage/Programming_BootCamp_System@Unnamed.rcov" NAME="Unnamed Coverage Results" MODIFIED="1526149891313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" MODULE_NAME="Programming_BootCamp_System" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rubyclasses.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rubyclasses.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rubyclasses.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+            <state relative-caret-position="379">
+              <caret line="234" column="7" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_list.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="student_list.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student_list.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+            <state relative-caret-position="38">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -39,8 +41,17 @@
       <file leaf-file-name="lecture.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lecture.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="798">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="course_list.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/course_list.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -57,8 +68,8 @@
       <file leaf-file-name="course.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/course.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="38">
+              <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -78,12 +89,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/course.rb" />
         <option value="$PROJECT_DIR$/person.rb" />
-        <option value="$PROJECT_DIR$/lecture.rb" />
         <option value="$PROJECT_DIR$/student.rb" />
-        <option value="$PROJECT_DIR$/rubyclasses.rb" />
         <option value="$PROJECT_DIR$/student_list.rb" />
+        <option value="$PROJECT_DIR$/course.rb" />
+        <option value="$PROJECT_DIR$/course_list.rb" />
+        <option value="$PROJECT_DIR$/lecture.rb" />
+        <option value="$PROJECT_DIR$/rubyclasses.rb" />
       </list>
     </option>
   </component>
@@ -162,12 +174,13 @@
       <workItem from="1526046317073" duration="420000" />
       <workItem from="1526052907501" duration="5009000" />
       <workItem from="1526065897479" duration="5649000" />
-      <workItem from="1526104768190" duration="1080000" />
+      <workItem from="1526104768190" duration="5400000" />
+      <workItem from="1526148672715" duration="1634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43184000" />
+    <option name="totallyTimeSpent" value="49138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="25" width="1539" height="875" extended-state="6" />
@@ -180,7 +193,7 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.284" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.034666665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -206,6 +219,48 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/rubyclasses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3097">
+          <caret line="163" column="65" selection-start-line="163" selection-start-column="65" selection-end-line="163" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rubyclasses.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2223">
@@ -382,20 +437,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/course.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lecture.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -403,17 +444,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rubyclasses.rb">
+    <entry file="file://$PROJECT_DIR$/course.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="247" column="13" lean-forward="true" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+        <state relative-caret-position="38">
+          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/student_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        <state relative-caret-position="38">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/course_list.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecture.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rubyclasses.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="234" column="7" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,9 @@
 
 class Lecture
 
+  def initialize
+    @courseList = CourseList.new
+  end
 
   mario ={
       name: "Mario Author",
@@ -35,6 +38,8 @@ class Lecture
   $lectures.push nzau
   $lectures.push luna
 
+
+
   def lectName
       name = []
     $lectures.each do |lect|
@@ -43,6 +48,12 @@ class Lecture
     end
 
     return name
+
+  end
+
+  def add_curse (name, startDate,endDate,category,lecture)
+    @course = Course.new(name,startDate,endDate,category,lecture)
+    @courseList.add_curse(@course)
 
   end
 
