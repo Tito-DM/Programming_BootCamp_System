@@ -72,12 +72,19 @@ class StudentList
           end
           break
       when option == 3
+
         if list.username == username and list.password == password
           list.age = newData
         end
         break
       when option == 5
         if list.username == username and list.password == password
+          if gender == "Male" or gender == "Female" or gender =="M" or gender =="F"
+            @gender = gender
+          else
+            @gender = "invalid"
+
+          end
           list.gender = newData
         end
         break
