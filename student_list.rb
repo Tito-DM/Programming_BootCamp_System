@@ -58,51 +58,77 @@ class StudentList
 
   def editStudent (username, password,option, newData)
 
-    @studentContainer.each do |list|
+    data = newData
+
 
       case
       when option == 1
-        if list.username == username and list.password == password
-          list.firstName = newData
-        end
-        break
-      when option == 2
-        if list.username == username and list.password == password
-          list.surname = newData
+
+        @studentContainer.each do |list|
+
+          if list.username == username and list.password == password
+
+            list.firstName = data
           end
-          break
+        end
+
+
+      when option == 2
+        @studentContainer.each do |list|
+
+          if list.username == username and list.password == password
+
+            list.surname = data
+          end
+        end
+
       when option == 3
 
-        if list.username == username and list.password == password
-          list.age = newData
-        end
-        break
-      when option == 5
-        if list.username == username and list.password == password
-          if gender == "Male" or gender == "Female" or gender =="M" or gender =="F"
-            @gender = gender
-          else
-            @gender = "invalid"
+        @studentContainer.each do |list|
 
+          if list.username == username and list.password == password
+
+            list.age = data.to_i
           end
-          list.gender = newData
         end
-        break
+
+      when option == 5
+        @studentContainer.each do |list|
+
+          if list.username == username and list.password == password
+            if newData == "Male" or newData == "Female" or newData =="M" or newData =="F"
+              list.gender = newData
+            else
+              list.gender= "invalid"
+
+            end
+            list.gender = newData
+          end
+        end
+
       when option == 6
-        if list.username == username and list.password == password
-           list.username = newData
-      end
-      break
+        @studentContainer.each do |list|
+
+          if list.username == username and list.password == password
+
+            list.username = data
+          end
+        end
+
       when option == 7
-      if list.username == username and list.password == password
-        list.password = newData
-      end
-        break
+        @studentContainer.each do |list|
+
+          if list.username == username and list.password == password
+
+            list.password = data
+          end
+        end
+
       else
         puts "invalid Menu"
       end
 
-    end
+
   end
 
   def checkpassWord (password)

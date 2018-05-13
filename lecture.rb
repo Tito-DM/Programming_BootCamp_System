@@ -2,9 +2,9 @@
 
 class Lecture
 
-  def initialize
-    @courseList = CourseList.new
-  end
+  # def initialize
+  #   @courselist = CourseList.new
+  # end
 
   mario ={
       name: "Mario Author",
@@ -38,7 +38,16 @@ class Lecture
   $lectures.push nzau
   $lectures.push luna
 
+  def lectureLogin (username, password)
+    $lectures.each do |list|
 
+      if list[:name] == username and list[:password] == password
+        puts "welcome #{list[:name]} #{list[:password]} "
+        return "login successfully"
+      end
+    end
+
+  end
 
   def lectName
       name = []
@@ -53,7 +62,7 @@ class Lecture
 
   def add_curse (name, startDate,endDate,category,lecture)
     @course = Course.new(name,startDate,endDate,category,lecture)
-    @courseList.add_curse(@course)
+    @courselist.add_curse(@course)
 
   end
 

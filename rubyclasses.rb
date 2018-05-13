@@ -2,13 +2,32 @@
 
 load 'student.rb'
 load 'student_list.rb'
+load 'lecture.rb'
+
+def exitSection data
+  if data == '4' then
+
+    #clear screen
+    clearScreen
+    mainMenu
+  end
+
+  #exit in age section
+
+  if data.to_i == 4 then
+    #clear screen
+    clearScreen
+    mainMenu
+  end
+
+end
 
 #global variable
 $count = 0
-
+$lectureList = Lecture.new
 def sign_inDisplay
   puts "choose one Option:\n"
-  puts " 1-Edit First Name \n 2-Edit Surname \n 3-Edit Age \n 5-Edit Gender \n 6-Edit userName \n 7-Password \n 4-exit"
+  puts " 1-Edit First Name \n 2-Edit Surname \n 3-Edit Age \n 5-Edit Gender \n 6-Edit userName \n 7-Edit Password \n 4-exit"
   puts "Please enter one of the options according to the number: "
 end
 
@@ -20,26 +39,44 @@ end
 
 def sign_in_Student
 
-  puts "Login or enter 4 both username or password field to exit\n"
+  puts "Login or enter 4 to exit\n"
 
 
 
   puts "Enter your UserName: "
   username = gets.chomp
-  puts "Enter your Password: "
-  password = gets.chomp
 
-  #test to exit
-  while username.to_i != 4 or password.to_i !=4
+  #call the exit login function
+  exitSection username
+
+  puts "Enter your Password: "
+
+  password = gets.chomp
+  #call the exit login function
+  exitSection username
+
     #clear screen
     clearScreen
 
+
+
+
+
+
+
     while  $studentList.loginStudent(username,password) != "login successfully"
-      puts "Invalid username or password"
+      puts "Invalid username or password or enter 4 to exit"
       puts "Enter your UserName: "
       username = gets.chomp
+      #call the exit login function
+      exitSection username
       puts "Enter your Password: "
       password = gets.chomp
+      #clear screen
+      sleep 1
+      clearScreen
+      #call the exit login function
+      exitSection password
 
     end
 
@@ -79,6 +116,10 @@ def sign_in_Student
             puts "Enter New surname: "
             newSurName = gets.chomp
             $studentList.editStudent(username,password,$option2,newSurName)
+            puts "\n             change made successfully "
+            #clear screen
+            sleep 1
+            clearScreen
             sign_inDisplay
             $option2 = gets.chomp.to_i
             #clear screen
@@ -89,6 +130,10 @@ def sign_in_Student
             puts "Enter New Age: "
             newAge = gets.chomp.to_i
             $studentList.editStudent(username,password,$option2,newAge)
+            puts "\n             change made successfully "
+            #clear screen
+            sleep 1
+            clearScreen
             sign_inDisplay
             $option2 = gets.chomp.to_i
             #clear screen
@@ -98,6 +143,10 @@ def sign_in_Student
             puts "Enter New Gender: "
             newGender = gets.chomp
             $studentList.editStudent(username,password,$option2,newGender)
+            puts "\n             change made successfully "
+            #clear screen
+            sleep 1
+            clearScreen
             sign_inDisplay
             $option2 = gets.chomp.to_i
             #clear screen
@@ -107,6 +156,10 @@ def sign_in_Student
             puts "Enter New username: "
             newUserName = gets.chomp
             $studentList.editStudent(username,password,$option2,newUserName)
+            puts "\n             change made successfully "
+            #clear screen
+            sleep 1
+            clearScreen
             sign_inDisplay
             $option2 = gets.chomp.to_i
             #clear screen
@@ -124,6 +177,10 @@ def sign_in_Student
               puts "Enter New username: "
               newPassword = gets.chomp
               $studentList.editStudent(username,password,$option2,newPassword)
+              puts "\n             change made successfully "
+              #clear screen
+              sleep 1
+              clearScreen
               sign_inDisplay
               $option2 = gets.chomp.to_i
               #clear screen
@@ -175,7 +232,7 @@ def sign_in_Student
 
 
 
-  end
+
   clearScreen
   mainMenu
 
@@ -225,6 +282,8 @@ def mainMenu
       next
 
     else
+      #clear screen
+      clearScreen
       puts "invalid Menu Option, please enter a valid option: "
       $option = gets.chomp.to_i
     end
@@ -238,19 +297,40 @@ $studentList = StudentList.new
 
 def registration
 
-  puts "Please enter your name: "
+  puts "Please enter your name or 4 to exit: "
   name = gets.chomp
-  puts "Please enter your surname:"
+  #call the exit login function
+  exitSection name
+
+  puts "Please enter your surname or 4 to exit:"
   surname = gets.chomp
-  puts "Please enter your age:"
+
+  #call the exit login function
+  exitSection surname
+
+  puts "Please enter your age or 4 to exit:"
   age = gets.chomp.to_i
-  puts "Please enter your gender, Please remember to enter M/F or Male or Female:"
+
+  #call the exit login function
+  exitSection age
+
+  puts "Please enter your gender, Please remember to enter M/F or Male or Female or 4 to exit:"
   gender = gets.chomp.capitalize
-  puts "Please set your Username:"
+
+  #call the exit login function
+  exitSection gender
+
+  puts "Please set your Username or 4 to exit:"
   username = gets.chomp
-  puts "Please set your Password:"
+
+  #call the exit login function
+  exitSection username
+
+  puts "Please set your Password or 4 to exit:"
   password = gets.chomp
 
+  #call the exit login function
+  exitSection password
   clearScreen
 
   $student = Student.new(name,surname,age,gender,username,password)
@@ -263,6 +343,8 @@ def registration
         puts "Please check your age is 17 or above and remember u can oly enter numbers\n"
         puts "Please enter a valid age: "
         age = gets.chomp.to_i
+        #call the exit login function
+        exitSection age
         $student = Student.new(name,surname,age,gender,username,password)
       end
 
@@ -278,6 +360,8 @@ def registration
         puts "This user is already registered please check your username"
         puts "Please enter a valid one: "
         username = gets.chomp
+        #call the exit login function
+        exitSection age
         $student = Student.new(name,surname,age,gender,username,password)
 
       end
