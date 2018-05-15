@@ -35,8 +35,8 @@ def registration
   #call the exit login function
   exitSection password
   clearScreen
-
-  $student = Student.new(name,surname,age,gender,username,password)
+   course = "No Course Added "
+  $student = Student.new(name,surname,age,gender,username,password,course)
 
   #check gender and age input
 
@@ -48,7 +48,7 @@ def registration
       age = gets.chomp.to_i
       #call the exit login function
       exitSection age
-      $student = Student.new(name,surname,age,gender,username,password)
+      $student = Student.new(name,surname,age,gender,username,password,course)
     end
 
     #check gender
@@ -56,7 +56,7 @@ def registration
       puts "invalid gender remember can only be Male/Female or M/F"
       puts "Please enter a valid gender: "
       gender = gets.chomp.capitalize
-      $student = Student.new(name,surname,age,gender,username,password)
+      $student = Student.new(name,surname,age,gender,username,password,course)
     end
 
     while $studentList.checkExistingStudent(username) == true
@@ -65,7 +65,7 @@ def registration
       username = gets.chomp
       #call the exit login function
       exitSection age
-      $student = Student.new(name,surname,age,gender,username,password)
+      $student = Student.new(name,surname,age,gender,username,password,course)
 
     end
 

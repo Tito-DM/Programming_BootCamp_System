@@ -1,4 +1,5 @@
 
+
 def mainMenuDisplay
   puts "\n"
   puts "choose one Option:\n"
@@ -27,6 +28,7 @@ def mainMenu
 
       break
     when $option == 2
+
       sign_in_Student
       break
     when $option == 3

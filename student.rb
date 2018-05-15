@@ -1,10 +1,11 @@
-
+load 'studentSign_In.rb'
 
 class Student
-  def initialize(firstName, surname, age, gender, username, password)
+  def initialize(firstName, surname, age, gender, username, password,courseRegistered)
 
     @firstName = firstName
     @surname = surname
+    @courseRegistered = courseRegistered
 
     if age.is_a? Numeric and age >= 17 then
       @age = age
@@ -23,7 +24,8 @@ class Student
     @username = username
     @password = password
   end
-  attr_accessor :firstName, :surname, :age, :gender, :username, :password
+  attr_accessor :firstName, :surname, :age, :gender, :username, :password, :courseRegistered,:courseRegistered
 
 
 end
+

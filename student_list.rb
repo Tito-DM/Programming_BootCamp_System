@@ -24,7 +24,7 @@ class StudentList
 
       @studentContainer.each do |list|
         if list.username == username and list.password == password
-          puts  puts " Name: #{list.firstName}\n Surname: #{list.surname}\n Age: #{list.age}\n Gender: #{list.gender}\n Username: #{list.username} \n Password: #{list.password} "
+          puts  puts " Name: #{list.firstName}\n Surname: #{list.surname}\n Age: #{list.age}\n Gender: #{list.gender}\n Username: #{list.username} \n Password: #{list.password}\n Course Registered: #{list.courseRegistered} "
 
         end
       end
@@ -142,4 +142,16 @@ class StudentList
 
   end
 
+
+  def addcourse course, username, password
+    @studentContainer.each do |list|
+
+      if list.username == username and list.password == password
+
+        list.courseRegistered = course
+      end
+
+  end
+
+  end
   end

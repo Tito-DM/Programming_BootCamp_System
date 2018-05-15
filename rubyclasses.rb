@@ -2,15 +2,15 @@
 
 load 'student.rb'
 load 'student_list.rb'
-load 'lecture.rb'
 load 'mainMenu.rb'
 load 'registration.rb'
-load 'sign_In.rb'
+load 'studentSign_In.rb'
+
 
 #global variable
 $count = 0
-$lectureList = Lecture.new
 $studentList = StudentList.new
+
 
 
 def exitSection data
